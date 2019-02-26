@@ -8,7 +8,7 @@ subtitle:
 description:
 keywords:
 author: Lin Qiwei
-language:
+language: zh-Hans
 timezone:
 
 # URL
@@ -73,8 +73,10 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: hexo-theme-next
+#theme: landscape
 
+ 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
