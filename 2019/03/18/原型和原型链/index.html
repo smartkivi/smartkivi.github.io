@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="网站,">
+  <meta name="keywords" content="JavaScript,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="一、建立博客    1、进入一个安全的目录    2、在 GitHub 上新建一个空 repo，repo 名称是「你的用户名.github.io」（注意个用户名是你的GitHub用户名，不是你的电脑用户名）    3、sudo npm install –unsafe-perm –verbose -g hexo ，安装 Hexo    3.1、sudo chown -R $(whoami) /usr">
-<meta name="keywords" content="网站">
+<meta name="description" content="var 实例对象 = new 构造函数构造函数有Object( )、Function( )、Number( )、String( )、Boolean( )可将上述构造函数分为三层：1、Object( )  2、Function( )  3、Number( )、String( )、Boolean( )原型指的是JavaScript防止重复声明一些属性，将属性设置成公有属性，放在特定的地方供对象调用。实">
+<meta name="keywords" content="JavaScript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="博客搭建">
-<meta property="og:url" content="http://yoursite.com/2019/02/27/博客搭建/index.html">
+<meta property="og:title" content="原型和原型链">
+<meta property="og:url" content="http://yoursite.com/2019/03/18/原型和原型链/index.html">
 <meta property="og:site_name" content="Kivi&#39;s website">
-<meta property="og:description" content="一、建立博客    1、进入一个安全的目录    2、在 GitHub 上新建一个空 repo，repo 名称是「你的用户名.github.io」（注意个用户名是你的GitHub用户名，不是你的电脑用户名）    3、sudo npm install –unsafe-perm –verbose -g hexo ，安装 Hexo    3.1、sudo chown -R $(whoami) /usr">
+<meta property="og:description" content="var 实例对象 = new 构造函数构造函数有Object( )、Function( )、Number( )、String( )、Boolean( )可将上述构造函数分为三层：1、Object( )  2、Function( )  3、Number( )、String( )、Boolean( )原型指的是JavaScript防止重复声明一些属性，将属性设置成公有属性，放在特定的地方供对象调用。实">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-27T06:14:58.465Z">
+<meta property="og:updated_time" content="2019-03-18T15:41:58.279Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="博客搭建">
-<meta name="twitter:description" content="一、建立博客    1、进入一个安全的目录    2、在 GitHub 上新建一个空 repo，repo 名称是「你的用户名.github.io」（注意个用户名是你的GitHub用户名，不是你的电脑用户名）    3、sudo npm install –unsafe-perm –verbose -g hexo ，安装 Hexo    3.1、sudo chown -R $(whoami) /usr">
+<meta name="twitter:title" content="原型和原型链">
+<meta name="twitter:description" content="var 实例对象 = new 构造函数构造函数有Object( )、Function( )、Number( )、String( )、Boolean( )可将上述构造函数分为三层：1、Object( )  2、Function( )  3、Number( )、String( )、Boolean( )原型指的是JavaScript防止重复声明一些属性，将属性设置成公有属性，放在特定的地方供对象调用。实">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/02/27/博客搭建/">
+  <link rel="canonical" href="http://yoursite.com/2019/03/18/原型和原型链/">
 
 
 
 
 
-  <title>博客搭建 | Kivi's website</title>
+  <title>原型和原型链 | Kivi's website</title>
   
 
 
@@ -253,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/27/博客搭建/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/原型和原型链/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lin Qiwei">
@@ -270,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">博客搭建</h1>
+          <h1 class="post-title" itemprop="name headline">原型和原型链</h1>
         
 
         <div class="post-meta">
@@ -282,8 +282,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-27T04:14:55+08:00">
-                2019-02-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-03-18T20:32:05+08:00">
+                2019-03-18
               </time>
             
 
@@ -342,11 +342,9 @@
       
 
       
-        <p>一、建立博客<br>    1、进入一个安全的目录<br>    2、在 GitHub 上新建一个空 repo，repo 名称是「你的用户名.github.io」（注意个用户名是你的GitHub用户名，不是你的电脑用户名）<br>    3、sudo npm install –unsafe-perm –verbose -g hexo ，安装 Hexo<br>    3.1、sudo chown -R $(whoami) /usr/local<br>    （<a href="https://www.cnblogs.com/qyf404/archive/2018/05/19/modify_permitted_in_mac.html）" target="_blank" rel="noopener">https://www.cnblogs.com/qyf404/archive/2018/05/19/modify_permitted_in_mac.html）</a><br>    4、hexo init myBlog<br>    5、cd myBlog<br>    6、npm i<br>    7、hexo new 开博大吉，你会看到一个 md 文件的路径<br>    8、运行 open source/_post/开博大吉.md 来编辑这个 md 文件<br>    9、start _config.yml，编辑网站配置<br>        （1）把第 6 行的 title 改成你想要的名字<br>        （2）把第 9 行的 author 改成你的大名<br>        （3）把最后一行的 type 改成 type: git<br>        （4）在最后一行后面新增一行，左边与 type 平齐，加上一行 repo: 仓库地址 （请将仓库地址改为「你的用户名.github.io」对应的仓库地址，仓库地址以 <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>: 开头）<br>        （5）第 4 步的 repo: 后面有个空格，不要眼瞎。<br>    10、npm install hexo-deployer-git –save，安装 git 部署插件<br>    11、hexo deploy<br>    12、进入「你的用户名.github.io」对应的 repo，打开 GitHub Pages 功能，如果已经打开了，你应该会看到一个预览链接<br>    13、用浏览器访问「预览链接/index.html」就应该看到了你的博客！（GitHub Pages 存在延迟，如果没看到，过三分钟再刷新看看）<br>    14、加密功能：<a href="http://z.arlmy.me/posts/Hexo/Hexo_BlogEncrypt/" target="_blank" rel="noopener">http://z.arlmy.me/posts/Hexo/Hexo_BlogEncrypt/</a></p>
-<p>二、备份<br>    1、在你的博客仓库创建一个分支hexo（直接点击branch，输入hexo，然后create）；<br>    2、设置hexo为默认分支；<br>    3、将博客仓库clone至本地，将.git以外的文件删除<br>    4、将之前的Hexo文件夹中的_config.yml，themes/，source，scffolds/，package.json，.gitignore复制到你克隆下来的仓库文件夹，即Username.github.io；（Username是你自己的用户名）（这里我复制的是博客仓库全部文件）<br>    4、将themes/next/(我用的是NexT主题)中的.git/删除，否则无法将主题文件夹push；<br>    5、在Username.github.io；文件夹执行npm install，npm install hexo-deployer-git(这里可以看看分支是不是显示为hexo)<br>    6、执行git add .，git commit -m “提交文件”，git push origin hexo来提交Hexo网站源文件；<br>    7、执行hexo g -d 生成静态网页部署到github上。</p>
-<p>三、配置域名<br>    1、打开namesilo，登录，进入域名管理<br>    2、打开DNS菜单<br>    3、按照这个链接配置DNS：<a href="https://help.github.com/en/articles/setting-up-an-apex-domain#configuring-a-records-with-your-dns-provider" target="_blank" rel="noopener">https://help.github.com/en/articles/setting-up-an-apex-domain#configuring-a-records-with-your-dns-provider</a><br>    4、在source文件夹下创建CNAME，输入域名</p>
-<p>四、使用命令<br>    0、hexo new 博客名字，进入对应路径编辑<br>    1、git add .  ，git commit -m “提交文件”，git push origin hexo（提交时先需先将themes/下主题的.git文件拿走）<br>    2、hexo g -d<br>    3、恢复：<br>    （1）、安装git；<br>    （2）、安装Nodejs和npm；<br>    （3）、使用克隆命令将仓库拷贝至本地；<br>    （4）、在文件夹内执行命令npm install hexo-cli -g、npm install、npm install hexo-deployer-git；</p>
-<p>五、参考链接<br>    1、<a href="https://www.jianshu.com/p/57b5a384f234" target="_blank" rel="noopener">https://www.jianshu.com/p/57b5a384f234</a><br>    2、<a href="https://www.jianshu.com/p/0b1fccce74e0" target="_blank" rel="noopener">https://www.jianshu.com/p/0b1fccce74e0</a><br>    3、<a href="https://www.jianshu.com/p/baab04284923" target="_blank" rel="noopener">https://www.jianshu.com/p/baab04284923</a><br>    4、<a href="https://www.zhihu.com/question/21193762" target="_blank" rel="noopener">https://www.zhihu.com/question/21193762</a></p>
+        <p>var 实例对象 = new 构造函数<br>构造函数有Object( )、Function( )、Number( )、String( )、Boolean( )<br>可将上述构造函数分为三层：1、Object( )  2、Function( )  3、Number( )、String( )、Boolean( )<br>原型指的是JavaScript防止重复声明一些属性，将属性设置成公有属性，放在特定的地方供对象调用。<br>实例对象.<strong>proto</strong>和构造函数.prototype均指向可指向公有属性（原型）<br>因为每个构造函数(除了object( ))均有自己独有的原型，导致原型链的产生<br>exp：<br>var n1=new Number( );<br>则<br>n1.<strong>proto</strong> === Number().prototype<br>Number().prototype.<strong>proto</strong> === Object().prototype<br>如上所示则为原型链</p>
+<p>需要注意的原型链：<br>1、Object.prototype.<strong>proto</strong> === null<br>2、Object.<strong>proto</strong> === Function.prototype === Function.<strong>proto</strong><br>3、Function.prototype.<strong>proto</strong> === Object.prototype</p>
+<p>参考链接：<a href="https://www.cnblogs.com/cloud-/p/9152761.html" target="_blank" rel="noopener">https://www.cnblogs.com/cloud-/p/9152761.html</a></p>
 
       
     </div>
@@ -364,7 +362,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/网站/" rel="tag"># 网站</a>
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
           
         </div>
       
@@ -377,8 +375,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/27/开站大吉/" rel="next" title="开站大吉">
-                <i class="fa fa-chevron-left"></i> 开站大吉
+              <a href="/2019/03/18/JS里的数据类型转换/" rel="next" title="JS里的数据类型转换">
+                <i class="fa fa-chevron-left"></i> JS里的数据类型转换
               </a>
             
           </div>
@@ -386,10 +384,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/02/27/http基础/" rel="prev" title="http基础">
-                http基础 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
