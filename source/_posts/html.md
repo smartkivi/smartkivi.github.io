@@ -23,7 +23,16 @@ tags:
             &#60;/a&#62;
  （3）创建一个可点击的图片：&#60;a href="https://developer.mozilla.org/en-US/" &#62;
  （4）创建一个email链接：&#60;a href="mailto:nowhere@mozilla.org"&#62;
-    2、&#60;audio&#62;：
+    1.1、target属性
+    （1）_blank：新窗口
+    （2）_self：默认，在自身窗口
+    1.2、href属性
+    （1）、href=""，本页面刷新
+    （2）、href="#"，返回顶部，锚点变为#
+    （3）、href="javascript:;"什么都没有操作
+    （4）、href="javascript:alert(1);"
+    （5）、href="#NAME"与name="NAME"搭配使用（只允许a标签使用）
+    2、&#60;audio&#62;
  （1）播放音频：
             &#60;audio src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg" &#62;
     3、&#60;b&#62;：加粗
@@ -97,6 +106,12 @@ tags:
 五、可替换元素
     可替换元素（replaced element）的展现效果不是由 CSS 来控制的。这些元素是一种外部对象，它们外观的渲染，是独立于 CSS 的。简单来说，它们的内容不受当前文档的样式的影响。CSS 可以影响可替换元素的位置，但不会影响到可替换元素自身的内容。
     例子：&#60;iframe&#62;、&#60;video&#62;、&#60;embed&#62;、&#60;img&#62;，在特殊情况下，下列元素可作为可替换元素处理：&#60;option&#62;、&#60;audio&#62;、&#60;canvas&#62;、&#60;object&#62;、&#60;applet&#62;
-
+    
 六、若想在html页面中打出标签，需用<span>"&#60</span><span>;"</span><span>"&#62</span><span>;"</span>"代替"<"">"
 
+七、杂七杂八的小问题
+    1、whois 查看域名所有者的身份 
+    2、有效的头元素包括 meta, link, title, style, script, noscript, and base
+    3、如果用户浏览器不支持 script，则会显示 noscript 中的内容
+    4、iframe 用于在当前页面里嵌入一个页面
+    5、body默认margin为8px

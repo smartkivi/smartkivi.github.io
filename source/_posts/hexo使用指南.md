@@ -7,6 +7,6 @@ tags:
 - 网站
 ---
 1、创建新博客：hexo new 文件名字
-2、更新网站：hexo g -d g
+2、更新网站：hexo g -d
 3、删除文件，直接删除后执行hexo clean
 4、在本地预览页面：hexo s
