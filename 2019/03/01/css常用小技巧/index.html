@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Kivi&#39;s website">
 <meta property="og:description" content="一、清除浮动（将元素并排）    （1）给需并列元素的父级加上class=”clearfix”    （2）给需并列的元素加上css：float:left; / float:right;    （3）clearfix:after{                            content=””;                            display:block;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-02T05:37:23.476Z">
+<meta property="og:updated_time" content="2019-03-02T08:37:32.886Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css常用小技巧">
 <meta name="twitter:description" content="一、清除浮动（将元素并排）    （1）给需并列元素的父级加上class=”clearfix”    （2）给需并列的元素加上css：float:left; / float:right;    （3）clearfix:after{                            content=””;                            display:block;">
@@ -342,13 +342,8 @@
       
 
       
-        <p>一、清除浮动（将元素并排）<br>    （1）给需并列元素的父级加上class=”clearfix”<br>    （2）给需并列的元素加上css：float:left; / float:right;<br>    （3）clearfix:after{<br>                            content=””;<br>                            display:block;<br>                            clear:both;</p>
-<pre><code>                    #60;!--height:0;--#62;
-                    #60;!--visibility:both;--#62;
-                    #60;!--不确定这两句要不要--#62;
-    }
-（4）若要使一行只有两个元素，给元素加上：width:50%;（两元素加起来等于100%即可）
-</code></pre><p>二、居中<br>    1、元素垂直居中（写了高度就要考虑垂直居中）<br>        （1）使同一个div内的元素中心线对齐：给div加上相同的padding-top和padding-bottom<br>        （2）若div或span的字：除加上padding-top和padding-bottom以外还需设置行高<br>                （可与元素高度相同，再加margin）<br>        （3）行内元素或表格元素垂直居中：<br>                line-height=height;<br>    2、元素水平居中：<br>        （1）块元素居中(需给宽度才可居中):<br>                 margin-left:auto;<br>                 margin-right:auto;<br>                 （margin:0 auto;）<br>        （2）内联元素居中：<br>                给父级元素加CSS样式：text-align:center;<br>        （3）调整padding，margin</p>
+        <p>一、清除浮动（将元素并排）<br>    （1）给需并列元素的父级加上class=”clearfix”<br>    （2）给需并列的元素加上css：float:left; / float:right;<br>    （3）clearfix:after{<br>                            content=””;<br>                            display:block;<br>                            clear:both;<br>            }<br>        （4）若要使一行只有两个元素，给元素加上：width:50%;（两元素加起来等于100%即可）</p>
+<p>二、居中<br>    1、元素垂直居中（写了高度就要考虑垂直居中）<br>        （1）使同一个div内的元素中心线对齐：给div加上相同的padding-top和padding-bottom<br>        （2）若div或span的字：除加上padding-top和padding-bottom以外还需设置行高<br>                （可与元素高度相同，再加margin）<br>        （3）行内元素或表格元素垂直居中：<br>                line-height=height;<br>    2、元素水平居中：<br>        （1）块元素居中(需给宽度才可居中):<br>                 margin-left:auto;<br>                 margin-right:auto;<br>                 （margin:0 auto;）<br>        （2）内联元素居中：<br>                给父级元素加CSS样式：text-align:center;<br>        （3）调整padding，margin</p>
 <p>三、脱离文档流（使元素悬浮或者固定在一个位置）<br>（1）position:fixed;<br>（2）top:0;left:0;（这是定位可以随便定）<br>（3）宽度会缩起来：若无必要，别用width:100%;</p>
 <p>四、背景图片<br>（1）图片居中：background-position:center center;<br>（2）图片自适应div：background-size:cover;</p>
 <p>五、关于display的三种属性<br>（1）inline-block能使inline元素拥有高度，并且能并排放置</p>
@@ -398,6 +393,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/03/18/JavaScript常用数据类型/" rel="prev" title="JavaScript常用数据类型">
+                JavaScript常用数据类型 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -465,7 +464,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -487,7 +486,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
