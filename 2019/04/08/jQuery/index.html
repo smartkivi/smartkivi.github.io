@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="网站,">
+  <meta name="keywords" content="jQuery,">
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="1、创建新博客：hexo new 文件名字2、更新网站：hexo g -d3、删除文件，直接删除后执行hexo clean4、在本地预览页面：hexo s 添加备份：1、git add .2、git commit -m “提交文件”3、git push origin hexo">
-<meta name="keywords" content="网站">
+<meta name="description" content="window.jQuery = function(nodeOrSelector) { let nodes = { } if(typeof nodeOrSelector === ‘string’){ let temp = document.querySelectorAll(nodeOrSelector) for (let i = 0; i &amp;lt; temp.length; i ++){ nodes">
+<meta name="keywords" content="jQuery">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo使用指南">
-<meta property="og:url" content="http://yoursite.com/2019/02/27/hexo使用指南/index.html">
+<meta property="og:title" content="jQuery">
+<meta property="og:url" content="http://yoursite.com/2019/04/08/jQuery/index.html">
 <meta property="og:site_name" content="Kivi&#39;s website">
-<meta property="og:description" content="1、创建新博客：hexo new 文件名字2、更新网站：hexo g -d3、删除文件，直接删除后执行hexo clean4、在本地预览页面：hexo s 添加备份：1、git add .2、git commit -m “提交文件”3、git push origin hexo">
+<meta property="og:description" content="window.jQuery = function(nodeOrSelector) { let nodes = { } if(typeof nodeOrSelector === ‘string’){ let temp = document.querySelectorAll(nodeOrSelector) for (let i = 0; i &amp;lt; temp.length; i ++){ nodes">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-18T01:40:49.762Z">
+<meta property="og:updated_time" content="2019-04-08T05:25:45.939Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="hexo使用指南">
-<meta name="twitter:description" content="1、创建新博客：hexo new 文件名字2、更新网站：hexo g -d3、删除文件，直接删除后执行hexo clean4、在本地预览页面：hexo s 添加备份：1、git add .2、git commit -m “提交文件”3、git push origin hexo">
+<meta name="twitter:title" content="jQuery">
+<meta name="twitter:description" content="window.jQuery = function(nodeOrSelector) { let nodes = { } if(typeof nodeOrSelector === ‘string’){ let temp = document.querySelectorAll(nodeOrSelector) for (let i = 0; i &amp;lt; temp.length; i ++){ nodes">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/02/27/hexo使用指南/">
+  <link rel="canonical" href="http://yoursite.com/2019/04/08/jQuery/">
 
 
 
 
 
-  <title>hexo使用指南 | Kivi's website</title>
+  <title>jQuery | Kivi's website</title>
   
 
 
@@ -253,7 +253,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/27/hexo使用指南/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/04/08/jQuery/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lin Qiwei">
@@ -270,7 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">hexo使用指南</h1>
+          <h1 class="post-title" itemprop="name headline">jQuery</h1>
         
 
         <div class="post-meta">
@@ -282,8 +282,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-27T16:48:51+08:00">
-                2019-02-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-04-08T13:14:17+08:00">
+                2019-04-08
               </time>
             
 
@@ -342,8 +342,41 @@
       
 
       
-        <p>1、创建新博客：hexo new 文件名字<br>2、更新网站：hexo g -d<br>3、删除文件，直接删除后执行hexo clean<br>4、在本地预览页面：hexo s</p>
-<p>添加备份：<br>1、git add .<br>2、git commit -m “提交文件”<br>3、git push origin hexo</p>
+        <p>window.jQuery = function(nodeOrSelector) {</p>
+<p>let nodes = { }</p>
+<p>if(typeof nodeOrSelector === ‘string’){</p>
+<p>let temp = document.querySelectorAll(nodeOrSelector)</p>
+<p>for (let i = 0; i &lt; temp.length; i ++){</p>
+<p>nodes[i] = temp[i]</p>
+<p>}</p>
+<p>nodes,length = temp.length</p>
+<p>}else if (nodeOrSelector instanceof Node){</p>
+<p>nodes = {</p>
+<p>0: nodeOrSelector,</p>
+<p>length: 1</p>
+<p>}</p>
+<p>}</p>
+<p>nodes.addClass = function(value){</p>
+<p>for (let i=0;i</p>
+<p>nodes[i].classList.add(value)</p>
+<p>}</p>
+<p>}</p>
+<p>nodes.setText = function(text){</p>
+<p>for (let i = 0;i &lt; nodes.length; i++){</p>
+<p>nodes[i].textContent = text</p>
+<p>}</p>
+<p>}</p>
+<p>return nodes</p>
+<p>}</p>
+<p>}</p>
+<p>window.$ = jQuery</p>
+<p>var $div = $(‘div’)</p>
+<p>$div.addClass(‘red’) // 可将所有 div 的 class 添加一个 red</p>
+<p>$div.setText(‘hi’) // 可将所有 div 的 textContent 变为 hi</p>
+<p>细节：</p>
+<p>1、创建一个window对象下的jQuery函数，返回值为对应函数</p>
+<p>2、判断传入参数是字符串还是node对象，如果是字符串，则用querySelectorAll选择所有节点，转换为node对象</p>
+<p>3、对所有节点进行遍历，修该textContent属性或者添加class</p>
 
       
     </div>
@@ -361,7 +394,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/网站/" rel="tag"># 网站</a>
+            <a href="/tags/jQuery/" rel="tag"># jQuery</a>
           
         </div>
       
@@ -374,8 +407,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/02/27/git入门/" rel="next" title="git入门">
-                <i class="fa fa-chevron-left"></i> git入门
+              <a href="/2019/04/08/DOM/" rel="next" title="DOM">
+                <i class="fa fa-chevron-left"></i> DOM
               </a>
             
           </div>
@@ -383,10 +416,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/02/27/html/" rel="prev" title="html">
-                html <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
